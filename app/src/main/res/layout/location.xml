@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/l">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:text="Register"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape2"
+
+                android:id="@+id/reg"
+                android:onClick="bureg"
+                android:layout_marginLeft="10dp" />
+
+            <Button
+                android:text="Login"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/reg"
+                android:layout_toStartOf="@+id/reg"
+                android:layout_marginRight="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape2"
+
+
+                android:id="@+id/log"
+                android:layout_alignParentTop="true"
+                android:onClick="bulog" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mainlayout"
+            android:layout_weight="1"
+            >
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
